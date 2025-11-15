@@ -1,2 +1,2 @@
-# Project dependencies
-# No dependencies required
+# Dependencias del proyecto
+# En este caso no se requieren

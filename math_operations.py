@@ -1,22 +1,22 @@
 import math
 
 def add_numbers(a, b):
-    # Add two numbers
+    # Suma
     result = a + b
     return round(result, 2) 
 
 def subtract_numbers(a, b):
-    # Subtract two numbers (a - b)
+    # Resta
     result = a - b
     return round(result, 2) 
 
 def multiply_numbers(a, b):
-    # Multiply two numbers
+    # Multiplicación
     result = a * b
     return round(result, 2)
 
 def divide_numbers(a, b):
-    # Divide two numbers (a ÷ b)
+    # División
     if b == 0:
         return None
     result = a / b
@@ -26,16 +26,16 @@ MAX_FLOAT = 1.797e308
 LOG_MAX = math.log(MAX_FLOAT)
 
 def power_numbers(a, b):
-    # Check size without computing a ** b
+    # Se revisa si puede existir overflow debido al tamaño de los números
     if a > 0 and b * math.log(a) > LOG_MAX:
-        return "Result too large"
+        return "Resultado demasiado grande"
     
     result = a ** b
     return round(result, 2)
 
 
 def calculate(operation, num1, num2):
-    # Choose which math operation to do based on the operation code
+    # Se determina que operación realizar
     if operation == 'SUM':
         return add_numbers(num1, num2)
     elif operation == 'SUB':

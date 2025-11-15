@@ -3,17 +3,17 @@ from math_operations import calculate
 from data_processor import read_math_file, write_results
 
 def main():
-    print("=== Math Calculator ===")
+    print("=== Calculadora ===")
     
-    # File to read
+    # Archivo que se usará
     input_file = 'data/math_operations.csv'
     
-    # Step 1: Read the file
-    print("\nStep 1: Reading file...")
+    # Paso 1: Leer el archivo
+    print("\nPaso 1: Leyendo el archivo...")
     operations = read_math_file(input_file)
     
-    # Step 2: Do the math
-    print("\nStep 2: Calculating...")
+    # Paso 2: Resolver las operaciones
+    print("\nPaso 2: Calculando...")
     results = []
     
     for i, op in enumerate(operations):
@@ -21,20 +21,20 @@ def main():
         num1 = op['num1']
         num2 = op['num2']
         
-        # Calculate the result
+        # Obtener el resultado
         result = calculate(operation, num1, num2)
         results.append(result)
     
-    print(f"Finished calculating {len(operations)} problems.")
+    print(f"Se terminó de calcular {len(operations)} problemas.")
     
-    # Step 3: Save results
-    print("\nStep 3: Saving results...")
+    # Paso 3: Guardar los resultados
+    print("\nStep 3: Guardando resultados...")
     write_results(input_file, operations, results)
     
-    print("\n=== Completed ===")
+    print("\n=== Listo ===")
 
-    # Preview first 10 results
-    print("\nPreview of first 10 results:")
+    # Ver los primeros 10 resultados
+    print("\nVer primeros 10 resultados:")
     for i, (op, result) in enumerate(zip(operations, results)):
         if i >= 10:
             break

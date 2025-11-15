@@ -17,7 +17,9 @@ Programa de python que lee problemas matemáticos (suma, resta, multiplicación,
 
 # Como ejecutarlo:
 
-Correr el archivo main.py y revisar los resultados en consola.
+1. Clonar el repositorio
+2. Ir a la carpeta del proyecto en VS Code
+3. Correr el archivo main.py y revisar los resultados en consola
 
 
 # Comentarios adicionales
@@ -38,7 +40,7 @@ Este archivo no será modificado, se deja solo como referencia para que se pueda
 
 Este archivo no contiene ninguna columna mostrando los resultados correctos, entonces no hay resultados de referencia para verificar los resultados obtenidos, así que le verificación se hace visual/manualmente solo con los primeros resultados.
 
-2. Algunas operaciones de potencia generan resultados demasiado grandes, estos resultados serán escritos como "Result too large" ya que calcularlos genera error de overflow en Python.
+2. Algunas operaciones de potencia generan resultados demasiado grandes, estos resultados serán escritos como "Resultado demasiado grande" ya que calcularlos genera error de overflow en Python.
 
 
 
