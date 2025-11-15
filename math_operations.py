@@ -28,7 +28,7 @@ LOG_MAX = math.log(MAX_FLOAT)
 def power_numbers(a, b):
     # Se revisa si puede existir overflow debido al tamaño de los números
     if a > 0 and b * math.log(a) > LOG_MAX:
-        return "Resultado demasiado grande"
+        return "Resultado demasiado grande (error overflow python)"
     
     result = a ** b
     return round(result, 2)
