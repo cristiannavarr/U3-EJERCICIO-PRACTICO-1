@@ -1,8 +1,11 @@
 import csv
+import os
 
 def read_math_file(filename):
     # Leer las operaciones matemáticas
     operations = []
+
+    filename = os.path.join(os.path.dirname(__file__), filename)
     
     with open(filename, 'r') as file:
         reader = csv.reader(file)
@@ -28,6 +31,7 @@ def read_math_file(filename):
 
 def write_results(filename, operations, results):
     # Escribir los resultados en el CSV
+    filename = os.path.join(os.path.dirname(__file__), filename)
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file)
         
