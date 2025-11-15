@@ -1,4 +1,4 @@
-# Programa para resolver operaciones matemáticas de un CSV
+# Programa para resolver operaciones matemáticas
 
 Programa de python que lee problemas matemáticos (suma, resta, multiplicación, división y potencia) de un csv, los resuelve y modifica el archivo para agregar los resultados.
 
@@ -47,6 +47,12 @@ Correr el archivo main.py y revisar los resultados en consola.
     Este archivo no contiene ninguna columna mostrando los resultados correctos, entonces no hay resultados de referencia para verificar los resultados obtenidos,      así que le verificación se hace visual/manualmente solo con los primeros resultados.
 
 2. Algunas operaciones de potencia generan resultados demasiado grandes, estos resultados serán escritos como "Result too large" ya que calcularlos genera error de overflow en Python.
+
+3. No se requirieron dependencias adicionales.
+
+4. El programa ya fue ejecutado, entonces el archivo data > math_operations.csv ya fue modificado por el programa. Si se quiere volver a ejecutar el programa para verificar su funcionamiento remplazar el archivo data > math_operations.csv por el original que se encuentra en data-reference > math_operations.csv.
+
+
 
 
 
