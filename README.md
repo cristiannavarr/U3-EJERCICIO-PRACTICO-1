@@ -48,7 +48,7 @@ Programa de python que lee problemas matemáticos (suma, resta, multiplicación,
     
     Este archivo no contiene ninguna columna mostrando los resultados correctos, entonces no hay resultados de referencia para verificar los resultados obtenidos,      así que le verificación se hace visual/manualmente solo con los primeros resultados.
 
-2. Algunas operaciones de potencia generan resultados demasiado grandes, estos resultados serán escritos como "Resultado demasiado grande" ya que calcularlos genera error de overflow en Python.
+2. Algunas operaciones de potencia generan resultados demasiado grandes, estos resultados serán escritos como "Resultado demasiado grande (error overflow python)" ya que calcularlos genera error de overflow en Python.
 
 3. No se requirieron dependencias adicionales.
 
